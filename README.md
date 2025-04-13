@@ -1,43 +1,35 @@
-# Python Grocery List Manager
+# Python Grocery List App
 
-A simple command-line application that simulates a grocery shopping experience. Users can manage their shopping list, add items, simulate purchases, and handle out-of-stock scenarios.
+A basic command-line grocery list simulator that maintains a fixed shopping workflow. The app demonstrates fundamental list operations in Python.
 
 ## Features
-
-- Real-time date and time display
-- Add new items to your grocery list
-- Automatic list sorting
-- Shopping simulation with item removal
-- Out-of-stock item replacement
-- Case-insensitive input handling
+- Session timestamp display (mm/dd hh:mm)
+- Fixed starting list with two items (Meat, Cheese)
+- Addition of exactly three user-defined items
+- Basic list display and alphabetical sorting
+- Simulated shopping for three items
+- Simple out-of-stock replacement for final item
 
 ## Requirements
-
 - Python 3.x
-- datetime module (included in Python standard library)
+- datetime module (standard library)
+
+## Program Flow
+1. Displays timestamp and initial two items
+2. User adds exactly three items
+3. Shows original and sorted list
+4. User "purchases" three items sequentially
+5. Replaces final item due to "out of stock"
 
 ## Usage
+```
+python grocery_list_app.py
+```
 
-1. Run the program using Python:
-   ```
-   python grocery_list_manager.py
-   ```
+Follow the prompts to add items, simulate purchases, and handle the final replacement.
 
-2. Follow the prompts to:
-   - Add new items to your list
-   - Simulate purchasing items
-   - Replace out-of-stock items
-
-## Example Interaction
-
-The program starts with "Meat" and "Cheese" in your list. You can:
-- Add three additional items
-- Remove items as you "shop"
-- Replace unavailable items
-- View your updated list at each step
-
-## Input Guidelines
-
-- Item names are case-insensitive
-- All items will be stored with proper capitalization
-- Follow the prompts to interact with the program
+## Notes
+- All items are automatically converted to title case
+- Shopping simulation removes exactly three items
+- Final item is always marked as "out of stock"
+- Replacement item is added to the start of the list
